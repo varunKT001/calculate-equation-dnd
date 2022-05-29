@@ -48,9 +48,9 @@ function App() {
   const evaluateEquation = () => {
     let evaluationString = '';
     equation.forEach((item) => {
-      evaluationString += item.value;
+      evaluationString += item.value + ' ';
     });
-    evaluationString += comparator + rhs;
+    evaluationString += comparator + ' ' + rhs;
     try {
       // eslint-disable-next-line
       const value = eval(evaluationString);
