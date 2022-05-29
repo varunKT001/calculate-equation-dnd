@@ -1,4 +1,4 @@
-# 🖥️ EQUATION CALCULATE DND
+# 🖥️ CALCULATE EQUATION DnD
 
 ## ✅ Test the App
 
