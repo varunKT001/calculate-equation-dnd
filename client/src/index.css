@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.draggable.dragging {
+  opacity: 0.5;
+}
+
+.operands-container,
+.operators-container {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.operand,
+.operator,
+.comparator,
+.rhs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  background-color: lightgreen;
+  cursor: move;
+}
+
+.operator,
+.comparator,
+.rhs {
+  height: 50px;
+  background-color: lightcoral;
+}
+
+.comparator,
+.rhs {
+  cursor: pointer;
+}
+
+.canvas {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border: dashed 5px grey;
+  height: 150px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.canvas .operand,
+.canvas .operator {
+  cursor: pointer;
+}
+
+.canvas .rhs {
+  background-color: #e9967a;
+  height: 100px;
+}
+
+.remove {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.submit {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
