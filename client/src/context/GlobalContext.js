@@ -21,7 +21,7 @@ export const GlobalContextProvider = (props) => {
 
   useEffect(() => {
     fetchAlphabets();
-  });
+  }, []);
 
   return (
     <GlobalContext.Provider
